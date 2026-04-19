@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校庆小程序</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="hero">
+            <h1>🎓 百年校庆 · 荣耀母校 🎉</h1>
+        </header>
+
+        <!-- 倒计时 -->
+        <section class="card">
+            <h2>⏳ 校庆倒计时</h2>
+            <div class="countdown-timer">
+                <div class="time-block"><span id="days">00</span><span>天</span></div>
+                <div class="time-block"><span id="hours">00</span><span>时</span></div>
+                <div class="time-block"><span id="minutes">00</span><span>分</span></div>
+                <div class="time-block"><span id="seconds">00</span><span>秒</span></div>
+            </div>
+        </section>
+
+        <!-- 校歌播放器 -->
+        <section class="card">
+            <h2>🎵 校歌播放器</h2>
+            <div class="music-player">
+                <button id="playPauseBtn" class="control-btn">▶ 播放</button>
+                <input type="range" id="progressBar" class="progress-bar" value="0">
+                <audio id="schoolAnthem" src="/music/school_anthem.mp3"></audio>
+            </div>
+        </section>
+
+        <!-- 祝福墙 -->
+        <section class="card">
+            <h2>💌 祝福墙</h2>
+            <div id="blessingsList" class="blessings-list">加载中...</div>
+            <form id="blessingForm">
+                <input type="text" id="nickname" placeholder="您的昵称" required>
+                <textarea id="content" rows="2" placeholder="写下祝福..." required></textarea>
+                <button type="submit" class="submit-btn">✨ 送上祝福</button>
+            </form>
+        </section>
+
+        <!-- 活动导航 -->
+        <section class="card">
+            <h2>📍 活动导航</h2>
+            <div id="activitiesGrid" class="activities-grid"></div>
+        </section>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>

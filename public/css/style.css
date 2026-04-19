@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #fff5e6;
+    font-family: system-ui, -apple-system, sans-serif;
+    padding: 20px;
+}
+.app-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.card {
+    background: white;
+    border-radius: 24px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.card h2 {
+    margin-bottom: 15px;
+    color: #d35400;
+}
+.countdown-timer {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+.time-block {
+    background: #f0e0d0;
+    border-radius: 16px;
+    padding: 12px;
+    text-align: center;
+    min-width: 70px;
+}
+.time-block span:first-child {
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+    color: #c23b0e;
+}
+.control-btn {
+    background: #d35400;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.progress-bar {
+    width: 100%;
+    margin-top: 10px;
+}
+.blessings-list {
+    max-height: 250px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+.blessing-item {
+    background: #fef7e0;
+    border-radius: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.blessing-nick {
+    font-weight: bold;
+    color: #d35400;
+}
+.blessing-form input, .blessing-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ffcfaa;
+    border-radius: 20px;
+}
+.submit-btn {
+    background: #e67e22;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 40px;
+    width: 100%;
+    cursor: pointer;
+}
+.activity-item {
+    background: #fff7ef;
+    padding: 12px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-btn {
+    background: #d96c1e;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 30px;
+    cursor: pointer;
+}
